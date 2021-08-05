@@ -1,0 +1,49 @@
+.demoInputBox {
+    padding: 10px;
+    border: #d0d0d0 1px solid;
+    border-radius: 4px;
+    background-color: #FFF;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    float: left;
+    display: block;
+    background: #27324E;
+    color: white;
+    border-radius: 2px;
+    border: 0;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    width: 100%;
+    height: 47px;
+    line-height: 45px;
+    outline: none;
+}
+
+button:focus {
+    background: #24B47E;
+}
+
+button:active {
+    background: #159570;
+}
+
+.main-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #27324E;
+    letter-spacing: 2px;
+    border: 1px solid green;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
