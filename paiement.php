@@ -34,13 +34,13 @@ if (isset($_POST['prix']) && !empty($_POST['prix'])) {
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Paiement</title>
+    <title>Card Details</title>
 
 </head>
 
 <body>
     <div class="container">
-        <h3 align="center">Procéder au Don </h3>
+        <h3 align="center">Process the payment </h3>
         <div class="row"><br>
             <div class="col-lg-4" style="margin-left: 400px;">
 
@@ -51,7 +51,7 @@ if (isset($_POST['prix']) && !empty($_POST['prix'])) {
                         <!--contiendra le message d'erreur de paiement-->
                         <br><br>
                         <div class="field-row">
-                            <label>Titulaire de la carte</label> <span id="card-holder-name-info" class="info"></span><br>
+                            <label>card Holder's name</label> <span id="card-holder-name-info" class="info"></span><br>
                             <input type="text" id="cardholder-name" class="demoInputBox" placeholder="Ex:Patrick ZoeTeam" required>
                         </div><br>
                         <div class="field-row">

@@ -5,13 +5,13 @@ window.onload = () => {
     let redirect1 = "/index.php"
 
 
-    //objets dela page
+    //objects of the page 
     let cardHolderName = document.getElementById("cardholder-name")
     let cardHolderEmail = document.getElementById("cardholder-email")
     let cardButton = document.getElementById("card-button")
     let clientSecret = cardButton.dataset.secret;
 
-    //crée les élément du formulaire de la carte bancaire
+    //
     let style = {
         base: {
             color: "green",
@@ -21,7 +21,7 @@ window.onload = () => {
     let card = elements.create("card", { style: style })
     card.mount("#card-elements")
 
-    //on gere la saisie
+    //here we deal with typing errors  
     card.addEventListener("change", (event) => {
         let displayError = document.getElementById("card-errors")
         if (event.error) {
@@ -31,7 +31,7 @@ window.onload = () => {
         }
     })
 
-    // on gere le paiement
+    // here we deal withx payment
     cardButton.addEventListener("click", () => {
         stripe.handleCardPayment(
                 clientSecret, card, {
